@@ -1,0 +1,183 @@
+\begin{table*}[t]
+\centering
+\label{tab:results_per_layer_middle}
+\footnotesize
+\begin{tabular}{@{}llr ccccc cc c c@{}}
+\toprule
+\multirow{2}{*}{\textbf{Layers}} &\multirow{2}{*}{\textbf{Method}} &\multirow{2}{*}{\makecell{\textbf{Spar.}\\\textbf{(\%)}}} &\multicolumn{5}{c}{\textbf{Core}} &\multicolumn{2}{c}{\textbf{Absorption}} &\textbf{SCR} &\textbf{TPP} \\
+\cmidrule(lr){4-8}\cmidrule(lr){9-10}\cmidrule(lr){11-11}\cmidrule(lr){12-12}
+& & &\makecell{KL\\Score$\uparrow$} &\makecell{CE\\Score$\uparrow$} &\makecell{Expl.\\Var.$\uparrow$} &\makecell{Cos\\Sim$\uparrow$} &\makecell{MSE\\$\downarrow$} &\makecell{Abs.\\Frac.$\downarrow$} &\makecell{Full\\Abs.$\downarrow$} &\makecell{Top-10\\$\uparrow$} &\makecell{Top-10\\$\uparrow$} \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 9}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9917 & 0.9901 & 0.8711 & 0.9297 & 0.9844
+   & 0.0555 & 0.0498
+   & 0.2386 & 0.0247 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9664 & 0.9544 & 0.7773 & 0.8789 & 1.3438
+   & 0.0555 & 0.0498
+   & 0.0858 & 0.0118 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9915} & 0.9846 & \textbf{0.8438} & \textbf{0.9141} & \textbf{1.0234}
+   & \textbf{0.0429} & \textbf{0.0310}
+   & \textbf{0.1830} & \textbf{0.0170} \\
+ & \spm{SparseGPT} & 50
+   & 0.9888 & \textbf{0.9880} & 0.8281 & 0.9062 & 1.0938
+   & 0.0527 & 0.0414
+   & 0.1565 & 0.0138 \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 10}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9909 & 0.9901 & 0.8672 & 0.9258 & 1.1953
+   & 0.0708 & 0.0541
+   & 0.2430 & 0.0220 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9733 & 0.9620 & 0.7812 & 0.8789 & 1.6719
+   & 0.0967 & 0.0769
+   & 0.0921 & 0.0081 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9914} & 0.9863 & \textbf{0.8438} & \textbf{0.9141} & \textbf{1.2109}
+   & \textbf{0.0701} & \textbf{0.0518}
+   & \textbf{0.1949} & 0.0153 \\
+ & \spm{SparseGPT} & 50
+   & 0.9887 & \textbf{0.9897} & 0.8203 & 0.9062 & 1.3281
+   & 0.0834 & 0.0659
+   & 0.1593 & \textbf{0.0159} \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 11}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9900 & 0.9885 & 0.8750 & 0.9258 & 1.4844
+   & 0.1061 & 0.0916
+   & 0.2557 & 0.0354 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9649 & 0.9430 & 0.7695 & 0.8711 & 2.2344
+   & 0.1256 & 0.1183
+   & 0.0720 & 0.0064 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9908} & 0.9863 & \textbf{0.8516} & \textbf{0.9102} & \textbf{1.5000}
+   & \textbf{0.1020} & \textbf{0.0885}
+   & \textbf{0.2178} & \textbf{0.0265} \\
+ & \spm{SparseGPT} & 50
+   & 0.9883 & \textbf{0.9897} & 0.8203 & 0.8984 & 1.7109
+   & 0.1181 & 0.1046
+   & 0.1827 & 0.0184 \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 12}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9896 & 0.9885 & 0.8750 & 0.9219 & 1.5391
+   & 0.0992 & 0.0840
+   & 0.2924 & 0.0250 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9736 & 0.9696 & 0.7773 & 0.8750 & 2.0781
+   & 0.1212 & 0.0971
+   & 0.1018 & 0.0056 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9904} & 0.9863 & \textbf{0.8516} & \textbf{0.9102} & \textbf{1.5703}
+   & \textbf{0.0987} & \textbf{0.0825}
+   & \textbf{0.2181} & \textbf{0.0242} \\
+ & \spm{SparseGPT} & 50
+   & 0.9879 & \textbf{0.9897} & 0.8164 & 0.8984 & 1.8281
+   & 0.1112 & 0.0966
+   & 0.2046 & 0.0206 \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 13}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9885 & 0.9868 & 0.8750 & 0.9297 & 1.9766
+   & 0.1344 & 0.1252
+   & 0.2864 & 0.0275 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9692 & 0.9582 & 0.7812 & 0.8828 & 3.0156
+   & 0.1609 & 0.1517
+   & \textbf{0.2095} & 0.0125 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9893} & 0.9846 & \textbf{0.8477} & \textbf{0.9180} & \textbf{2.1250}
+   & \textbf{0.1279} & \textbf{0.1183}
+   & 0.2008 & \textbf{0.0318} \\
+ & \spm{SparseGPT} & 50
+   & 0.9871 & \textbf{0.9897} & 0.8242 & 0.9062 & 2.5156
+   & 0.1422 & 0.1401
+   & 0.1783 & 0.0152 \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 14}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9885 & 0.9868 & 0.8711 & 0.9297 & 2.1719
+   & 0.0333 & 0.0288
+   & 0.3756 & 0.0440 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9562 & 0.9316 & 0.7734 & 0.8750 & 3.3438
+   & 0.0399 & 0.0390
+   & 0.1078 & 0.0102 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9893} & 0.9863 & \textbf{0.8438} & \textbf{0.9180} & \textbf{2.3594}
+   & \textbf{0.0354} & \textbf{0.0291}
+   & \textbf{0.2755} & \textbf{0.0439} \\
+ & \spm{SparseGPT} & 50
+   & 0.9869 & \textbf{0.9897} & 0.8281 & 0.9102 & 2.7812
+   & 0.0401 & 0.0351
+   & 0.2309 & 0.0380 \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 15}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9872 & 0.9868 & 0.8906 & 0.9375 & 2.3594
+   & 0.0314 & 0.0274
+   & 0.3937 & 0.0584 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9700 & 0.9734 & 0.8047 & 0.8945 & 4.0938
+   & 0.0382 & 0.0390
+   & 0.1860 & 0.0090 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9881} & 0.9846 & \textbf{0.8594} & \textbf{0.9258} & \textbf{2.6719}
+   & \textbf{0.0308} & \textbf{0.0262}
+   & \textbf{0.2847} & \textbf{0.0378} \\
+ & \spm{SparseGPT} & 50
+   & 0.9857 & \textbf{0.9897} & 0.8398 & 0.9141 & 3.1094
+   & 0.0377 & 0.0347
+   & 0.2341 & 0.0356 \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 16}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9862 & 0.9852 & 0.8789 & 0.9336 & 3.2969
+   & 0.0318 & 0.0254
+   & 0.3583 & 0.0752 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9566 & 0.9468 & 0.7812 & 0.8789 & 5.7500
+   & 0.0334 & 0.0319
+   & 0.2037 & 0.0116 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9868} & 0.9846 & \textbf{0.8555} & \textbf{0.9219} & \textbf{3.6250}
+   & \textbf{0.0283} & \textbf{0.0221}
+   & \textbf{0.3144} & 0.0377 \\
+ & \spm{SparseGPT} & 50
+   & 0.9842 & \textbf{0.9897} & 0.8320 & 0.9102 & 4.2188
+   & 0.0317 & 0.0295
+   & 0.3069 & \textbf{0.0398} \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Layer 17}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9859 & 0.9852 & 0.8828 & 0.9375 & 3.5156
+   & 0.0381 & 0.0409
+   & 0.2987 & 0.0693 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9496 & 0.9392 & 0.7578 & 0.8672 & 6.1875
+   & 0.0434 & 0.0538
+   & 0.1120 & 0.0048 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9865} & 0.9846 & \textbf{0.8594} & \textbf{0.9258} & \textbf{3.9062}
+   & 0.0581 & 0.0580
+   & \textbf{0.2699} & \textbf{0.0389} \\
+ & \spm{SparseGPT} & 50
+   & 0.9839 & \textbf{0.9880} & 0.8398 & 0.9141 & 4.4688
+   & \textbf{0.0410} & \textbf{0.0479}
+   & 0.2390 & 0.0351 \\
+\bottomrule
+\end{tabular}
+\end{table*}

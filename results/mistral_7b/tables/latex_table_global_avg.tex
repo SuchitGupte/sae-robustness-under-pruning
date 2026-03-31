@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering
+\label{tab:results_global_avg}
+\footnotesize
+\begin{tabular}{@{}llr ccccc cc c c@{}}
+\toprule
+\multirow{2}{*}{\textbf{Layers}} &\multirow{2}{*}{\textbf{Method}} &\multirow{2}{*}{\makecell{\textbf{Spar.}\\\textbf{(\%)}}} &\multicolumn{5}{c}{\textbf{Core}} &\multicolumn{2}{c}{\textbf{Absorption}} &\textbf{SCR} &\textbf{TPP} \\
+\cmidrule(lr){4-8}\cmidrule(lr){9-10}\cmidrule(lr){11-11}\cmidrule(lr){12-12}
+& & &\makecell{KL\\Score$\uparrow$} &\makecell{CE\\Score$\uparrow$} &\makecell{Expl.\\Var.$\uparrow$} &\makecell{Cos\\Sim$\uparrow$} &\makecell{MSE\\$\downarrow$} &\makecell{Abs.\\Frac.$\downarrow$} &\makecell{Full\\Abs.$\downarrow$} &\makecell{Top-10\\$\uparrow$} &\makecell{Top-10\\$\uparrow$} \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{All Layers}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9722 & 0.9753 & 0.9844 & 0.8490 & 0.0150
+   & 0.4292 & 0.4150
+   & 0.3627 & 0.0000 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9672 & \textbf{0.9758} & 0.9792 & 0.8034 & 0.0177
+   & 0.4510 & 0.4371
+   & 0.3634 & \textbf{0.0000} \\
+ & \spm{Wanda} & 50
+   & 0.9742 & 0.9720 & 0.9857 & \textbf{0.8477} & \textbf{0.0128}
+   & 0.4023 & 0.3805
+   & 0.3810 & \textbf{0.0000} \\
+ & \spm{SparseGPT} & 50
+   & \textbf{0.9749} & 0.9734 & \textbf{0.9870} & \textbf{0.8477} & 0.0131
+   & \textbf{0.3848} & \textbf{0.3715}
+   & \textbf{0.3617} & \textbf{0.0000} \\
+\bottomrule
+\end{tabular}
+\end{table*}

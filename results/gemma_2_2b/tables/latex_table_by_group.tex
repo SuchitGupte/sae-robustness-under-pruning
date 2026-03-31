@@ -1,0 +1,69 @@
+\begin{table*}[t]
+\centering
+\label{tab:results_by_group}
+\footnotesize
+\begin{tabular}{@{}llr ccccc cc c c@{}}
+\toprule
+\multirow{2}{*}{\textbf{Layers}} &\multirow{2}{*}{\textbf{Method}} &\multirow{2}{*}{\makecell{\textbf{Spar.}\\\textbf{(\%)}}} &\multicolumn{5}{c}{\textbf{Core}} &\multicolumn{2}{c}{\textbf{Absorption}} &\textbf{SCR} &\textbf{TPP} \\
+\cmidrule(lr){4-8}\cmidrule(lr){9-10}\cmidrule(lr){11-11}\cmidrule(lr){12-12}
+& & &\makecell{KL\\Score$\uparrow$} &\makecell{CE\\Score$\uparrow$} &\makecell{Expl.\\Var.$\uparrow$} &\makecell{Cos\\Sim$\uparrow$} &\makecell{MSE\\$\downarrow$} &\makecell{Abs.\\Frac.$\downarrow$} &\makecell{Full\\Abs.$\downarrow$} &\makecell{Top-10\\$\uparrow$} &\makecell{Top-10\\$\uparrow$} \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Early (0--8)}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9944 & 0.9941 & 0.8976 & 0.9497 & 0.4268
+   & 0.0674 & 0.0354
+   & 0.1714 & 0.0270 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9847 & 0.9818 & 0.8416 & 0.9175 & 0.6536
+   & 0.0764 & 0.0486
+   & 0.1130 & 0.0187 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9935} & 0.9873 & \textbf{0.8793} & \textbf{0.9401} & \textbf{0.4648}
+   & \textbf{0.0691} & \textbf{0.0353}
+   & \textbf{0.1487} & 0.0188 \\
+ & \spm{SparseGPT} & 50
+   & 0.9918 & \textbf{0.9906} & 0.8728 & 0.9353 & 0.4886
+   & 0.0717 & 0.0402
+   & 0.1329 & \textbf{0.0196} \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Middle (9--17)}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9887 & 0.9876 & 0.8763 & 0.9301 & 2.0582
+   & 0.0668 & 0.0586
+   & 0.3047 & 0.0424 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9644 & 0.9531 & 0.7782 & 0.8780 & 3.3021
+   & 0.0794 & 0.0730
+   & 0.1301 & 0.0089 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9894} & 0.9854 & \textbf{0.8507} & \textbf{0.9175} & \textbf{2.2214}
+   & \textbf{0.0660} & \textbf{0.0564}
+   & \textbf{0.2399} & \textbf{0.0304} \\
+ & \spm{SparseGPT} & 50
+   & 0.9868 & \textbf{0.9893} & 0.8277 & 0.9071 & 2.5616
+   & 0.0731 & 0.0662
+   & 0.2103 & 0.0258 \\
+\midrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{\texttt{Late (18--25)}}}
+ & \textit{Baseline} & \textit{0}
+   & 0.9776 & 0.9765 & 0.8682 & 0.9307 & 14.2891
+   & 0.1208 & 0.1369
+   & 0.3885 & 0.0681 \\
+\cmidrule(l){2-12}
+ & \spm{Magnitude} & 50
+   & 0.9535 & 0.9510 & 0.7544 & 0.8701 & 29.4766
+   & \textbf{0.0831} & \textbf{0.1177}
+   & 0.3192 & 0.0117 \\
+ & \spm{Wanda} & 50
+   & \textbf{0.9780} & 0.9773 & \textbf{0.8569} & \textbf{0.9253} & \textbf{14.7422}
+   & 0.1045 & 0.1179
+   & \textbf{0.3743} & 0.0519 \\
+ & \spm{SparseGPT} & 50
+   & 0.9768 & \textbf{0.9815} & 0.8389 & 0.9150 & 17.6016
+   & 0.1054 & 0.1293
+   & 0.3605 & \textbf{0.0547} \\
+\bottomrule
+\end{tabular}
+\end{table*}
